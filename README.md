@@ -64,7 +64,7 @@ Testnachrichten sind als als Collection für Postman mitgeliefert und hier zu fi
 Nachfolgend noch die automatisch generierte README, zu der ich lediglich hinzugefügt habe.
 Wichtig zu erwähnen ist dass das gesamte Projekt lediglich "quick and dirty" umgesetzt wurde,
 ich also etwa das bauen eines Gesamt-jar Files nicht probiert habe, sondern lediglich innerhalb der IDE getestet habe.
-Bei Bedarf kann ich selbiges, ebenso wie ein github-Projekt / Versionsmanagement, jedoch problemlos nachliefern!
+Bei Bedarf kann ich selbiges jedoch problemlos nachliefern!
 
 
 ########################################################################################################
