@@ -20,6 +20,7 @@ quarkus.http.port
 z.B. wie aktuell: quarkus.http.port=8082
 
 Folgende Nachrichten gibt es grundsätzlich:
+
 	Zweck									Request				URL
 	- Abfragen aller Hunde: 						GET				<host>:<port>/dogs
 		=> z.B. / aktuell: 										localhost:8082/dogs			
@@ -38,20 +39,24 @@ Folgende Nachrichten gibt es grundsätzlich:
 Bezüglich des Body, was hier nur POST- und PUT-Requests betrifft, gilt nur folgendes:
 Wie auch die Daten die per GET empfangen werden, sind die Nachrichten im JSON-Format zu übertragen.
 Hier ein komplettes Beispiel einer GET-Antwort:
+
+```json
 {
 	"id": 3,
 	"birthdate": "2012-12-11",
 	"gender": "FEMALE",
 	"name": "Kali"
 }
-	
+```
+ 
 Der Vollständigkeit halber hier ein Beispiel für das anlegen eines Hundes, per POST (bzw. das Ändern mittels PUT):
+```json
 {
   "name": "Kali",
   "birthdate": "2012-12-11",
   "gender": "FEMALE"
 }
-
+```
 Testnachrichten sind als als Collection für Postman mitgeliefert und hier zu finden:
 	DogHouse\DogHouse Testset.postman_collection.json
 
@@ -62,7 +67,7 @@ ich also etwa das bauen eines Gesamt-jar Files nicht probiert habe, sondern ledi
 Bei Bedarf kann ich selbiges, ebenso wie ein github-Projekt / Versionsmanagement, jedoch problemlos nachliefern!
 
 
-#############################################################################################################################
+########################################################################################################
 
 
 # code-with-quarkus
