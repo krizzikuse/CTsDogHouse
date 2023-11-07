@@ -20,20 +20,20 @@ quarkus.http.port
 z.B. wie aktuell: quarkus.http.port=8082
 
 Folgende Nachrichten gibt es grundsätzlich:
-		Zweck										Request					URL
-	- 	Abfragen aller Hunde: 						GET						<host>:<port>/dogs
-		=> z.B. / aktuell: 													localhost:8082/dogs			
-	- Abfragen eines Hundes mit bestimmter ID: 		GET						<host>:<port>/dogs/<id>
+	Zweck									Request				URL
+	- Abfragen aller Hunde: 						GET				<host>:<port>/dogs
+		=> z.B. / aktuell: 										localhost:8082/dogs			
+	- Abfragen eines Hundes mit bestimmter ID: 				GET				<host>:<port>/dogs/<id>
 		=> z.B. / aktuell um Hund #1 abzufragen: 							localhost:8082/1
-	- Anlegen / Kreieren eines Hundes: 				POST					<host>:<port>/dogs
-		=> z.B. / aktuell: 													localhost:8082/dogs
-	- Ändern eines existenten Hundes: 				PUT						<host>:<port>/dogs/<id>
+	- Anlegen / Kreieren eines Hundes: 					POST				<host>:<port>/dogs
+		=> z.B. / aktuell: 										localhost:8082/dogs
+	- Ändern eines existenten Hundes: 					PUT				<host>:<port>/dogs/<id>
 		=> z.B. / aktuell um Hund #1 abzuändern: 							localhost:8082/1
-	- Löschen eines Hundes:							DELETE					<host>:<port>/dogs/<id>
+	- Löschen eines Hundes:							DELETE				<host>:<port>/dogs/<id>
 		=> z.B. / aktuell um Hund #1 zu löschen: 							localhost:8082/1
 	- Abfragen aller Hunde mit bestimmtem 
-		Namen geordnet nach Geburtsdatum:			GET 					<host>:<port>/dogs/findByName?name=<name>
-																			localhost:8082/dogs/findByName?name=Puppy
+		Namen geordnet nach Geburtsdatum:				GET 				<host>:<port>/dogs/findByName?name=<name>
+														localhost:8082/dogs/findByName?name=Puppy
 
 Bezüglich des Body, was hier nur POST- und PUT-Requests betrifft, gilt nur folgendes:
 Wie auch die Daten die per GET empfangen werden, sind die Nachrichten im JSON-Format zu übertragen.
